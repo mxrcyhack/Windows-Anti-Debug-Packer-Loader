@@ -26,7 +26,7 @@ struct Options {
 void print_usage()
 {
     std::cout
-        << "mlprotect - protect your loader and your mapped DLL\n\n"
+        << "Windows Anti-Debug Packer & Loader\n\n"
         << "Usage:\n"
         << "  ProtectionLoader.exe [options]\n\n"
         << "Options:\n"

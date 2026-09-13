@@ -25,7 +25,7 @@ inline void show_protect_alert(const char* side, protector::Reason reason, const
 
     char title[80]{};
     char body[512]{};
-    sprintf_s(title, "mlprotect - %s", side);
+    sprintf_s(title, "Anti-Debug Packer - %s", side);
     sprintf_s(body, "%s\n%s", kind, (detail && detail[0]) ? detail : "");
     MessageBoxA(nullptr, body, title, MB_OK | MB_ICONERROR | MB_TOPMOST | MB_SETFOREGROUND);
 }

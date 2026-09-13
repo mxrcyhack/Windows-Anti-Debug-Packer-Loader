@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.20)
-project(mlprotect LANGUAGES CXX ASM_MASM)
+project(AntiDebugPackerLoader LANGUAGES CXX ASM_MASM)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 if(NOT WIN32)
-    message(FATAL_ERROR "mlprotect is Windows-only")
+    message(FATAL_ERROR "Windows-only")
 endif()
 
 add_library(protector STATIC
