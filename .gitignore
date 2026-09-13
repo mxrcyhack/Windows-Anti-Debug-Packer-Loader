@@ -1,0 +1,10 @@
+bin/
+obj/
+.vs/
+loader/generated/
+*.user
+*.suo
+*.opensdf
+*.sdf
+.cursor/
+build/
