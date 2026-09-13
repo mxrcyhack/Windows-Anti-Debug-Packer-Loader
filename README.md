@@ -1,6 +1,6 @@
-# mlprotect
+# Windows Anti-Debug Packer & Loader
 
-Windows x64. Protects your loader and your mapped DLL.
+User-mode packer-style protection for your Windows x64 loader and manual-mapped DLL (`mlprotect`).
 
 The DLL stays dead until the loader maps it and calls `Protector_Init` with a handshake token. Both sides watch `.text`. Debugger / extra checks / blacklist run once per process (first `start()`), about every 250 ms. A second `start()` only watches that image’s `.text`. First hit exits the process.
 
